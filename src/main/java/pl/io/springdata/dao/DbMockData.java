@@ -44,11 +44,11 @@ public class DbMockData {
 
     @EventListener(ApplicationReadyEvent.class)
     public void fill() {
-        Product product1 = new Product("Ołówek",  1.99f, true);
+        Product product1 = new Product("Olowek",  1.99f, true);
         Product product2 = new Product("Blok", 8.59f, true);
         Product product3 = new Product("Gumka", 2.22f, false);
 
-        Customer customer = new Customer("Jak Kowalski", "Wrocław");
+        Customer customer = new Customer("Jan Kowalski", "Wroclaw");
 
         Set<Product> products = new HashSet<Product>() {
             {
